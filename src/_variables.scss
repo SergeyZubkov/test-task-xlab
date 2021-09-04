@@ -1,0 +1,23 @@
+$color-purple-heart: #4F27BF;
+$color-purple-heart-lighten: lighten($color-purple-heart, 5%);
+$color-purple-heart-darken: darken($color-purple-heart, 5%);
+$color-white: #fff;
+$color-shark: #1C1C1E;
+$color-shark-lighten: lighten($color-shark, 15%);
+$color-gray: #6C6C6C;
+$color-concrete: #F3F3F3;
+
+$sidebar-bg-color: $color-white !default;
+$sidebar-color: $color-shark !default;
+$sidebar-width: 100% !default;
+$sidebar-collapsed-width: 80px !default;
+$highlight-color: #d8d8d8 !default;
+$submenu-bg-color: $color-white !default;
+$submenu-bg-color-collapsed: $color-white !default;
+$icon-bg-color: transparent !default;
+$icon-size: 35px !default;
+$breakpoint-xs: 480px !default;
+$breakpoint-sm: 576px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 992px !default;
+$breakpoint-xl: 1200px !default;

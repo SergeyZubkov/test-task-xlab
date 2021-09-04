@@ -1,0 +1,39 @@
+@import '../../variables';
+
+.header {
+    background: $color-purple-heart;
+    height: 80px;
+    padding: 16px 32px;
+    color: $color-white;
+    display: flex;
+    justify-content: space-between;
+    &__link {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    &__title {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        padding-left: 24px;
+    }
+}
+
+.user-profile {
+    @extend .brand;
+
+    &__title {
+        @extend .brand__title
+    }
+}
+

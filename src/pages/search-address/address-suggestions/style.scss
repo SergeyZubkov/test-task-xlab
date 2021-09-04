@@ -1,0 +1,24 @@
+.address-suggestions {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(2, 0, 97, 0.25);
+    border-radius: 10px;
+    padding: 24px;
+    h3 {
+        margin: 0;
+        font-family: Montserrat;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        padding-bottom: 16px;
+    }
+    &__item {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        padding: 16px 0;
+        border-top: 1px solid #d7d7d7;
+    }
+}

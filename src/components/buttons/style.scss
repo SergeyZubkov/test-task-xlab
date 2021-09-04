@@ -1,0 +1,58 @@
+@import '../../variables';
+
+.button {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 217px;
+    height: 70px;
+    div {
+        margin-left: 16px;
+    }
+
+    &-primary {
+        @extend .button;
+        background-color: $color-purple-heart;
+        color: $color-white;
+        transition: color ease-in-out .3s;
+        svg {
+            stroke: $color-white;
+            path {
+                fill: $color-white;
+            }
+        }
+        &:hover {
+            background: $color-purple-heart-lighten;
+            transition: color ease-in-out .3s;
+        }
+        &:active {
+            background-color: $color-purple-heart-darken;
+        }
+    }
+}
+
+
+

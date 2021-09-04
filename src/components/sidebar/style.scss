@@ -1,0 +1,68 @@
+@import '../../variables';
+@import '~react-pro-sidebar/dist/scss/styles.scss';
+.nav-menu-container {
+    padding: 24px 32px;
+    color: $color-shark;
+}
+
+ul > li > div > span.pro-icon-wrapper > span > svg > path {
+    fill: $color-shark;
+}
+
+.pro-menu-item.nav-menu__item {
+    margin-top: 32px;
+}
+
+.pro-sidebar.nav-menu-container {
+    padding: 5px 25px 0 5px;
+}
+
+.nav-menu {
+    &__header {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0;
+    }
+    &__item-link {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: $color-shark;
+        transition: color ease-in .3s;
+        svg {
+            transition: stroke ease-in .3s;
+            path {
+                transition: fill ease-in .3s;
+            }
+        }
+        &:hover {
+            background-color: $color-concrete;
+            transition: color .3s ease-in, background-color .15s ease-in;
+            color: $color-shark-lighten;
+            svg {
+                path {
+                    transition: fill ease-in .3s;
+                    fill: $color-shark-lighten;
+                }
+            }
+        }
+        &.active {
+            background-color: $color-concrete;
+        }  
+    }
+    &__item-title {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding-left: 16px;
+    }
+}
